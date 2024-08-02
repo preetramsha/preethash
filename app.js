@@ -10,8 +10,8 @@ class HashManager {
             fs.writeFileSync(this.filename, 'hash\n');
         }
     }
-    async generateHash(rawText,salt) {
-        return bcrypt.hashSync(rawText.toString(), parseInt(salt));
+    async generateHash(saltRounds = 5) {
+        return bcrypt.hashSync(this.password.toString(), parseInt(saltRounds));
     }
     writeUsedHash(hash) {
         fs.appendFileSync(this.filename, `${hash}\n`);
