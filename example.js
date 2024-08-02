@@ -1,5 +1,5 @@
 //client side
-import { HashManager } from "./app.js";
+import { HashManager } from "./index.js";
 //init the class by giving csv filename (or don't to use default used_hashes.csv) and the API/pass key
 //init have to be dont both at client side (to generate unique hash everytime)
 // and server side (to check the hash is unique, correct and not previously used)

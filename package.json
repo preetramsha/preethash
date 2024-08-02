@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "I faced issue with hashing when using API, if someone gets my Bearer token there in no way to check if it is coming from an authorized person or not. With this we can easily check if the person that is making request has access to the API. Use cases can be extended.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
